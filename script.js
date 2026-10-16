@@ -210,24 +210,32 @@ function applyLanguage(lang) {
     }
   });
 
-  // 6. Update WhatsApp URLs with localized greeting message
+  // 6. Update WhatsApp URLs with localized greeting message while preserving the target phone number
   const waGreeting = encodeURIComponent(dict.floatingWaGreeting || 'Hi Miguel, I saw your portfolio and would like to connect.');
-  const waUrl = `https://wa.me/573144433323?text=${waGreeting}`;
 
   const floatingWa = document.getElementById('floatingWaLink');
   if (floatingWa) {
-    floatingWa.setAttribute('href', waUrl);
+    const currentHref = floatingWa.getAttribute('href') || '';
+    const phoneMatch = currentHref.match(/wa\.me\/(\d+)/);
+    const phone = phoneMatch ? phoneMatch[1] : '573177533148';
+    floatingWa.setAttribute('href', `https://wa.me/${phone}?text=${waGreeting}`);
     floatingWa.setAttribute('aria-label', dict.floatingWaTooltip || 'Chat on WhatsApp');
   }
 
   const contactWaAction = document.getElementById('contactWaAction');
   if (contactWaAction) {
-    contactWaAction.setAttribute('href', waUrl);
+    const currentHref = contactWaAction.getAttribute('href') || '';
+    const phoneMatch = currentHref.match(/wa\.me\/(\d+)/);
+    const phone = phoneMatch ? phoneMatch[1] : '573177533148';
+    contactWaAction.setAttribute('href', `https://wa.me/${phone}?text=${waGreeting}`);
   }
 
   const navWaLink = document.getElementById('navWaLink');
   if (navWaLink) {
-    navWaLink.setAttribute('href', waUrl);
+    const currentHref = navWaLink.getAttribute('href') || '';
+    const phoneMatch = currentHref.match(/wa\.me\/(\d+)/);
+    const phone = phoneMatch ? phoneMatch[1] : '573177533148';
+    navWaLink.setAttribute('href', `https://wa.me/${phone}?text=${waGreeting}`);
     navWaLink.setAttribute('title', dict.floatingWaTooltip || 'Chat on WhatsApp');
   }
 }
