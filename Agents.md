@@ -1,0 +1,1 @@
+Antes de hacer cualquier cambio en el codigo debe primero conmutar hacia la rama "dev" con el comando "git checkout dev", luego hacer los cambios y finalmente conmutar hacia la rama "main" con el comando "git checkout main" para deployar. No olvides hacer merge desde dev hacia main con el comando "git merge dev" y luego subir a main con el comando "git push origin main"
