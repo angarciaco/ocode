@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Miguel García | Senior Software Engineer & Cloud Architect</title>
-  <meta name="description" content="Landing page profesional de Miguel García. Ingeniero de Software Senior con más de 10 años de experiencia en Drupal, Cloud (AWS), Microservicios y Arquitecturas Headless en sectores de Banca, Salud, Medios masivos y Logística a nivel nacional e internacional.">
+  <title id="docTitle">Miguel García | Senior Software Engineer & Cloud Architect</title>
+  <meta name="description" id="docDesc" content="Professional portfolio of Miguel García. Senior Software Engineer with 10+ years of experience in Drupal, AWS Cloud, Microservices, and Headless Architectures across Banking, Healthcare, High-Traffic Media, and Logistics internationally & nationally.">
   <meta name="keywords" content="Miguel Garcia, Senior Software Engineer, Drupal Developer, Full Stack, AWS Cloud, Acquia, Headless Drupal, React, Next.js, Colombia, USA Nearshore">
   <meta name="author" content="Miguel García">
   
   <!-- Open Graph / Meta Social -->
   <meta property="og:title" content="Miguel García | Senior Software Engineer & Cloud Solutions">
-  <meta property="og:description" content="10+ años impulsando plataformas digitales de alto impacto para Mastercard, BID, Caracol Televisión, Santander y redes hospitalarias en EE.UU.">
+  <meta property="og:description" content="10+ years driving mission-critical architectures for Mastercard, IDB, Caracol Television, Santander, and US Healthcare systems.">
   <meta property="og:type" content="website">
 
   <!-- Google Fonts -->
@@ -40,19 +40,27 @@
       </a>
 
       <nav class="nav-links" id="navLinks">
-        <a href="#perfil" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> Perfil</a>
-        <a href="#sectores" class="nav-link"><i class="fa-solid fa-earth-americas"></i> Sectores & Mercados</a>
-        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> Stack & Skills</a>
-        <a href="#experiencia" class="nav-link"><i class="fa-solid fa-briefcase"></i> Trayectoria</a>
-        <a href="#certificaciones" class="nav-link"><i class="fa-solid fa-certificate"></i> Certificaciones</a>
-        <a href="#contacto" class="nav-btn-highlight"><i class="fa-solid fa-paper-plane"></i> Contactar</a>
+        <a href="#perfil" class="nav-link"><i class="fa-solid fa-user-astronaut"></i> <span data-i18n="navProfile">Profile</span></a>
+        <a href="#sectores" class="nav-link"><i class="fa-solid fa-earth-americas"></i> <span data-i18n="navSectors">Sectors & Markets</span></a>
+        <a href="#skills" class="nav-link"><i class="fa-solid fa-microchip"></i> <span data-i18n="navSkills">Stack & Skills</span></a>
+        <a href="#experiencia" class="nav-link"><i class="fa-solid fa-briefcase"></i> <span data-i18n="navExperience">Experience</span></a>
+        <a href="#certificaciones" class="nav-link"><i class="fa-solid fa-certificate"></i> <span data-i18n="navCertifications">Certifications</span></a>
+        <a href="#contacto" class="nav-btn-highlight"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="navContact">Contact</span></a>
       </nav>
 
       <div class="nav-actions">
-        <a href="https://wa.me/573144433323" target="_blank" rel="noopener" class="quick-contact-badge" title="Chatear por WhatsApp">
-          <i class="fa-brands fa-whatsapp"></i> +57 314 443 3323
+        <!-- Language Switcher (EN / ES) -->
+        <div class="lang-switch-box" aria-label="Language Selector">
+          <button type="button" class="lang-btn active" data-set-lang="en" aria-label="Switch to English">EN</button>
+          <span class="lang-divider">|</span>
+          <button type="button" class="lang-btn" data-set-lang="es" aria-label="Cambiar a Español">ES</button>
+        </div>
+
+        <a href="https://wa.me/573144433323" target="_blank" rel="noopener" class="quick-contact-badge" id="navWaLink" title="Chat on WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i> <span data-i18n="quickWhatsApp">+57 314 443 3323</span>
         </a>
-        <button class="mobile-toggle" id="menuToggle" aria-label="Abrir menú">
+
+        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu">
           <i class="fa-solid fa-bars"></i>
         </button>
       </div>
@@ -65,58 +73,58 @@
       <div class="hero-content">
         <div class="status-pill">
           <span class="pulse-indicator"></span>
-          <span>Disponible para proyectos y roles Senior / Lead internacionales & remotos</span>
+          <span data-i18n="statusPill">Available for Senior / Tech Lead international remote roles</span>
         </div>
         <h1 class="hero-title">
-          Construyendo <span class="gradient-text">soluciones digitales escalables</span> con alcance global.
+          <span data-i18n="heroTitlePrefix">Building</span> <span class="gradient-text" data-i18n="heroTitleGradient">scalable digital solutions</span> <span data-i18n="heroTitleSuffix">with global reach.</span>
         </h1>
-        <p class="hero-lead">
-          Soy <strong>Miguel García</strong>, Ingeniero de Software Senior con más de una década de experiencia liderando arquitecturas de alta exigencia, microservicios en <strong>AWS</strong>, soluciones <strong>Headless / Decoupled</strong> y ecosistemas <strong>Drupal & Full-Stack</strong> para gigantes de la banca, salud, medios y logística en Colombia, Estados Unidos y Latinoamérica.
+        <p class="hero-lead" data-i18n="heroLead">
+          I am <strong>Miguel García</strong>, a Senior Software Engineer with over a decade of experience driving mission-critical architectures, <strong>AWS</strong> microservices, <strong>Headless / Decoupled</strong> systems, and <strong>Enterprise Drupal & Full-Stack</strong> ecosystems for top-tier banking, healthcare, broadcast media, and logistics organizations across the US, Latin America, and Colombia.
         </p>
 
         <!-- National vs International scope banner -->
         <div class="scope-badges">
           <div class="scope-item">
             <i class="fa-solid fa-flag-checkered text-primary"></i>
-            <span><strong>Nivel Nacional (CO):</strong> Líder en medios masivos y telemetría crítica de transporte.</span>
+            <span><strong data-i18n="scopeNationalTitle">National Level (Colombia):</strong> <span data-i18n="scopeNationalDesc">Pioneer in high-traffic broadcast media and mission-critical fleet telemetry.</span></span>
           </div>
           <div class="scope-item">
             <i class="fa-solid fa-globe text-accent"></i>
-            <span><strong>Nivel Internacional (USA & Latam):</strong> Fintech mundial, banca multilateral y redes hospitalarias Tier-1.</span>
+            <span><strong data-i18n="scopeIntlTitle">International Level (USA & Latam):</strong> <span data-i18n="scopeIntlDesc">Global fintech, multilateral banking, and Tier-1 hospital networks.</span></span>
           </div>
         </div>
 
         <div class="hero-cta-group">
           <a href="#sectores" class="btn btn-primary">
-            <span>Explorar Sectores & Proyectos</span>
+            <span data-i18n="btnExploreSectors">Explore Sectors & Projects</span>
             <i class="fa-solid fa-arrow-right"></i>
           </a>
           <a href="#contacto" class="btn btn-secondary">
             <i class="fa-solid fa-envelope"></i>
-            <span>Iniciar Conversación</span>
+            <span data-i18n="btnStartConversation">Start Conversation</span>
           </a>
-          <button class="btn btn-ghost" id="copyEmailBtn" data-email="engmiguelgarcia@gmail.com" title="Copiar correo electrónico">
+          <button class="btn btn-ghost" id="copyEmailBtn" data-email="engmiguelgarcia@gmail.com" title="Copy email address">
             <i class="fa-solid fa-copy"></i>
-            <span class="copy-label">Copiar Email</span>
+            <span class="copy-label" data-i18n="btnCopyEmail">Copy Email</span>
           </button>
         </div>
 
         <div class="hero-stats">
           <div class="stat-box">
             <span class="stat-number">10+</span>
-            <span class="stat-label">Años de Trayectoria</span>
+            <span class="stat-label" data-i18n="statYears">Years of Experience</span>
           </div>
           <div class="stat-box">
             <span class="stat-number">5+</span>
-            <span class="stat-label">Sectores de Industria</span>
+            <span class="stat-label" data-i18n="statSectors">Industry Sectors</span>
           </div>
           <div class="stat-box">
             <span class="stat-number">100%</span>
-            <span class="stat-label">Equipos Distribuidos (Nearshore)</span>
+            <span class="stat-label" data-i18n="statDistributed">Distributed Teams (Nearshore)</span>
           </div>
           <div class="stat-box">
             <span class="stat-number">Millions+</span>
-            <span class="stat-label">Usuarios Impactados</span>
+            <span class="stat-label" data-i18n="statUsers">Users Impacted</span>
           </div>
         </div>
       </div>
@@ -133,9 +141,9 @@
             </div>
             <div class="avatar-meta">
               <h3 class="profile-name">Miguel García</h3>
-              <p class="profile-role">Sr. Software Engineer & Cloud Specialist</p>
+              <p class="profile-role" data-i18n="heroRole">Sr. Software Engineer & Cloud Specialist</p>
               <div class="location-badge">
-                <i class="fa-solid fa-location-dot"></i> Colombia ⇄ Presencia Global
+                <i class="fa-solid fa-location-dot"></i> <span data-i18n="heroLocation">Colombia ⇄ Global Presence</span>
               </div>
             </div>
           </div>
@@ -153,7 +161,7 @@
   experience: <span class="str">"10+ Years"</span>,
   coreFocus: [<span class="str">"Cloud Microservices"</span>, <span class="str">"Enterprise Drupal"</span>, <span class="str">"High-Traffic Systems"</span>],
   markets: {
-    national: [<span class="str">"Medios Masivos CO"</span>, <span class="str">"Logística & Flotas"</span>],
+    national: [<span class="str">"Broadcast Media CO"</span>, <span class="str">"Fleet Telemetry"</span>],
     international: [<span class="str">"USA Healthcare"</span>, <span class="str">"Multilateral Banking"</span>, <span class="str">"Global Payments"</span>]
   },
   mindset: <span class="str">"Continuous improvement, innovation & cost efficiency"</span>
@@ -175,7 +183,7 @@
   <!-- Client Logos & Brands Ticker -->
   <section class="ticker-section">
     <div class="container text-center">
-      <p class="ticker-caption">EMPRESAS Y CLIENTES CON LOS QUE HE COLABORADO DIRECTA E INDIRECTAMENTE</p>
+      <p class="ticker-caption" data-i18n="tickerCaption">COMPANIES & CLIENTS I HAVE COLLABORATED WITH DIRECTLY & INDIRECTLY</p>
     </div>
     <div class="ticker-wrap">
       <div class="ticker-move">
@@ -206,37 +214,37 @@
   <section class="section about-section" id="perfil">
     <div class="container">
       <div class="section-badge">
-        <i class="fa-solid fa-fingerprint"></i> Perfil Profesional
+        <i class="fa-solid fa-fingerprint"></i> <span data-i18n="aboutBadge">Professional Profile</span>
       </div>
-      <h2 class="section-title">
-        Quién soy y cómo genero valor en la ingeniería moderna
+      <h2 class="section-title" data-i18n="aboutTitle">
+        Who I Am & How I Drive Engineering Value
       </h2>
-      <p class="section-subtitle">
-        Más de una década combinando rigor arquitectónico, pensamiento estratégico y ejecución ágil en productos de misión crítica.
+      <p class="section-subtitle" data-i18n="aboutSubtitle">
+        Over a decade pairing architectural rigor, strategic thinking, and agile execution for mission-critical digital products.
       </p>
 
       <div class="about-grid">
         <div class="about-card main-statement">
           <div class="about-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-          <h3>Arquitecto y Desarrollador con Visión de Negocio</h3>
-          <p>
-            Desde 2012 he evolucionado a la par con el ecosistema web global. Especializado en <strong>Drupal empresarial (D8, D9, D10)</strong>, <strong>PHP</strong>, <strong>Java</strong>, <strong>NodeJS</strong>, <strong>Python</strong> y <strong>Go</strong>, cuento con amplia trayectoria implementando infraestructuras en <strong>Amazon Web Services (AWS)</strong> desde 2014, bajo esquemas de microservicios, alta disponibilidad y arquitecturas desacopladas (Headless).
+          <h3 data-i18n="aboutCardTitle">Architect & Developer with Business Vision</h3>
+          <p data-i18n="aboutCardP1">
+            Since 2012, I have evolved alongside the global web ecosystem. Specialized in <strong>Enterprise Drupal (D8, D9, D10)</strong>, <strong>PHP</strong>, <strong>Java</strong>, <strong>NodeJS</strong>, <strong>Python</strong>, and <strong>Go</strong>, with extensive track record implementing <strong>Amazon Web Services (AWS)</strong> cloud infrastructures since 2014 under microservices, high-availability, and decoupled (Headless) paradigms.
           </p>
-          <p>
-            Mi estilo de trabajo une la <strong>resolución proactiva de problemas</strong>, auditoría exhaustiva de seguridad/accesibilidad y una mentalidad continua de <strong>optimización de costos de infraestructura y tiempos de despliegue</strong>.
+          <p data-i18n="aboutCardP2">
+            My engineering philosophy unites <strong>proactive problem-solving</strong>, strict security/accessibility auditing, and a continuous mindset for <strong>infrastructure cost reduction and zero-downtime deployment pipelines</strong>.
           </p>
           <div class="statement-points">
             <div class="point-item">
               <i class="fa-solid fa-check-circle"></i>
-              <span>Colaboración en entornos multiculturales: Onsite, Nearshore y Offshore.</span>
+              <span data-i18n="aboutPoint1">Collaboration in cross-functional multicultural environments: Onsite, Nearshore, and Offshore.</span>
             </div>
             <div class="point-item">
               <i class="fa-solid fa-check-circle"></i>
-              <span>Ciclo de vida de software completo (SDLC): Del levantamiento y diseño al CI/CD.</span>
+              <span data-i18n="aboutPoint2">Full Software Development Life Cycle (SDLC): From requirements and architecture to CI/CD.</span>
             </div>
             <div class="point-item">
               <i class="fa-solid fa-check-circle"></i>
-              <span>Interacción directa con ingenieros de Google, Facebook, Acquia y Pantheon.</span>
+              <span data-i18n="aboutPoint3">Direct coordination with engineers from Google, Facebook, Acquia, and Pantheon.</span>
             </div>
           </div>
         </div>
@@ -245,24 +253,24 @@
           <div class="about-mini-card">
             <div class="mini-icon accent-blue"><i class="fa-solid fa-layer-group"></i></div>
             <div>
-              <h4>Componentes Modulares & Atomic Design</h4>
-              <p>Creación de sistemas de diseño reutilizables con Storybook, Next.js, React y Sass/Tailwind para equipos multidisciplinarios.</p>
+              <h4 data-i18n="miniCard1Title">Modular Components & Atomic Design</h4>
+              <p data-i18n="miniCard1Desc">Designing and engineering reusable design systems with Storybook, Next.js, React, and Sass/Tailwind for multi-disciplinary squads.</p>
             </div>
           </div>
 
           <div class="about-mini-card">
             <div class="mini-icon accent-purple"><i class="fa-solid fa-cloud-arrow-up"></i></div>
             <div>
-              <h4>Cloud, PaaS & Serverless</h4>
-              <p>Despliegue y afinamiento en Acquia, Pantheon, AWS (Lambdas, API Gateway, S3, EC2), Cloudflare y contenedores Docker/Docksal.</p>
+              <h4 data-i18n="miniCard2Title">Cloud, PaaS & Serverless</h4>
+              <p data-i18n="miniCard2Desc">Deployment and fine-tuning on Acquia, Pantheon, AWS (Lambdas, API Gateway, S3, EC2), Cloudflare, and Docker/Docksal containers.</p>
             </div>
           </div>
 
           <div class="about-mini-card">
             <div class="mini-icon accent-emerald"><i class="fa-solid fa-gauge-high"></i></div>
             <div>
-              <h4>Rendimiento & Tráfico Masivo</h4>
-              <p>Experiencia probada en plataformas de millones de visitas concurrentes, votaciones en tiempo real y optimización de base de datos.</p>
+              <h4 data-i18n="miniCard3Title">High Concurrency & Massive Traffic</h4>
+              <p data-i18n="miniCard3Desc">Proven experience on platforms with millions of concurrent visits, real-time live voting, and deep database query optimization.</p>
             </div>
           </div>
         </div>
@@ -274,20 +282,20 @@
   <section class="section sectors-section" id="sectores">
     <div class="container">
       <div class="section-badge">
-        <i class="fa-solid fa-network-wired"></i> Sectores & Mercados de Impacto
+        <i class="fa-solid fa-network-wired"></i> <span data-i18n="sectorsBadge">Sectors & Market Footprint</span>
       </div>
-      <h2 class="section-title">
-        Experiencia en Industrias de Alta Exigencia
+      <h2 class="section-title" data-i18n="sectorsTitle">
+        Proven Experience in High-Stakes Industries
       </h2>
-      <p class="section-subtitle">
-        He aportado soluciones tecnológicas clave tanto en el mercado nacional colombiano como en proyectos globales de primer nivel (EE.UU. y organismos internacionales).
+      <p class="section-subtitle" data-i18n="sectorsSubtitle">
+        Delivered key technical solutions both for the Colombian national market and for top-tier international organizations in the US and Latin America.
       </p>
 
       <!-- Scope Filter Tabs -->
       <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">Todos los Sectores</button>
-        <button class="filter-btn" data-filter="internacional"><i class="fa-solid fa-globe"></i> Nivel Internacional</button>
-        <button class="filter-btn" data-filter="nacional"><i class="fa-solid fa-flag"></i> Nivel Nacional (Colombia)</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="filterAll">All Sectors</button>
+        <button class="filter-btn" data-filter="internacional"><i class="fa-solid fa-globe"></i> <span data-i18n="filterIntl">International Level</span></button>
+        <button class="filter-btn" data-filter="nacional"><i class="fa-solid fa-flag"></i> <span data-i18n="filterNat">National (Colombia)</span></button>
       </div>
 
       <div class="sectors-grid">
@@ -299,12 +307,12 @@
               <i class="fa-solid fa-building-columns"></i>
             </div>
             <div class="sector-scope-tag intl">
-              <i class="fa-solid fa-globe"></i> Internacional
+              <i class="fa-solid fa-globe"></i> <span data-i18n="tagIntl">International</span>
             </div>
           </div>
-          <h3 class="sector-name">Banca Multilateral, Finanzas & Pagos</h3>
-          <p class="sector-description">
-            Desarrollo y rediseño de plataformas institucionales financieras con rigurosos estándares de seguridad, cifrado, cumplimiento normativo y experiencia de usuario.
+          <h3 class="sector-name" data-i18n="sectorFintechTitle">Multilateral Banking, Fintech & Global Payments</h3>
+          <p class="sector-description" data-i18n="sectorFintechDesc">
+            Developing and redesigning institutional banking platforms with strict compliance, encryption, security standards, and seamless user experience.
           </p>
           <div class="sector-clients">
             <span class="client-pill">Mastercard</span>
@@ -312,9 +320,9 @@
             <span class="client-pill">Banco Interamericano de Desarrollo (BID)</span>
           </div>
           <ul class="sector-features">
-            <li><i class="fa-solid fa-shield-halved"></i> Sitios de banca segura y módulos a medida para el Santander y el BID.</li>
-            <li><i class="fa-solid fa-code-merge"></i> Integración con pasarelas de pago y autenticación segura con Auth0.</li>
-            <li><i class="fa-solid fa-server"></i> Gestión de despliegues y sintonización en plataformas PaaS bancarias.</li>
+            <li><i class="fa-solid fa-shield-halved"></i> <span data-i18n="sectorFintechF1">Secure banking portals and bespoke modules for Santander Group and IDB (Inter-American Development Bank).</span></li>
+            <li><i class="fa-solid fa-code-merge"></i> <span data-i18n="sectorFintechF2">Integration with payment gateways and enterprise identity authentication via Auth0.</span></li>
+            <li><i class="fa-solid fa-server"></i> <span data-i18n="sectorFintechF3">Deployment management and performance tuning on specialized banking PaaS platforms.</span></li>
           </ul>
         </div>
 
@@ -325,12 +333,12 @@
               <i class="fa-solid fa-hospital-user"></i>
             </div>
             <div class="sector-scope-tag intl">
-              <i class="fa-solid fa-earth-americas"></i> Internacional (USA)
+              <i class="fa-solid fa-earth-americas"></i> <span data-i18n="tagIntlUSA">International (USA)</span>
             </div>
           </div>
-          <h3 class="sector-name">Salud & Redes Hospitalarias Tier-1</h3>
-          <p class="sector-description">
-            Plataformas web sanitarias de gran escala en Estados Unidos, con foco en accesibilidad (WCAG/ADA compliance), alta disponibilidad y experiencia del paciente.
+          <h3 class="sector-name" data-i18n="sectorHealthTitle">Tier-1 Healthcare & Hospital Networks</h3>
+          <p class="sector-description" data-i18n="sectorHealthDesc">
+            Large-scale healthcare web platforms across the United States, focused on strict accessibility (WCAG/ADA compliance), zero downtime, and patient experience.
           </p>
           <div class="sector-clients">
             <span class="client-pill">Inova Health System</span>
@@ -339,9 +347,9 @@
             <span class="client-pill">AdventHealth</span>
           </div>
           <ul class="sector-features">
-            <li><i class="fa-solid fa-universal-access"></i> Cumplimiento estricto de accesibilidad web, modularidad y rendimiento.</li>
-            <li><i class="fa-solid fa-cubes"></i> Arquitecturas Headless Drupal y componentes atómicos con Storybook.</li>
-            <li><i class="fa-solid fa-clock-rotate-left"></i> Ecosistemas de portales médicos con altos requisitos de privacidad y uptime.</li>
+            <li><i class="fa-solid fa-universal-access"></i> <span data-i18n="sectorHealthF1">Strict adherence to accessibility (ADA/WCAG), component modularity, and high performance.</span></li>
+            <li><i class="fa-solid fa-cubes"></i> <span data-i18n="sectorHealthF2">Headless Drupal decoupled architectures integrated with Next.js/React and Atomic Design in Storybook.</span></li>
+            <li><i class="fa-solid fa-clock-rotate-left"></i> <span data-i18n="sectorHealthF3">Critical medical portal ecosystems with stringent patient privacy and high-availability SLAs.</span></li>
           </ul>
         </div>
 
@@ -352,12 +360,12 @@
               <i class="fa-solid fa-tower-broadcast"></i>
             </div>
             <div class="sector-scope-tag hybrid">
-              <i class="fa-solid fa-arrows-split-up-and-left"></i> Nacional & Latam
+              <i class="fa-solid fa-arrows-split-up-and-left"></i> <span data-i18n="tagHybrid">National & Latam</span>
             </div>
           </div>
-          <h3 class="sector-name">Medios Masivos, Noticias & Streaming</h3>
-          <p class="sector-description">
-            Ingeniería para los mayores portales informativos, de deportes, entretenimiento y radio de Colombia, soportando picos masivos de millones de usuarios simultáneos.
+          <h3 class="sector-name" data-i18n="sectorMediaTitle">Broadcast Media, News & Live Streaming</h3>
+          <p class="sector-description" data-i18n="sectorMediaDesc">
+            Engineering for Colombia's highest-traffic news, sports, entertainment, and radio networks, handling surges of millions of concurrent live visitors.
           </p>
           <div class="sector-clients">
             <span class="client-pill">Caracol Televisión</span>
@@ -369,9 +377,9 @@
             <span class="client-pill">Teatro Mayor</span>
           </div>
           <ul class="sector-features">
-            <li><i class="fa-solid fa-chart-line"></i> Sistemas de votación en tiempo real para eventos televisados en vivo.</li>
-            <li><i class="fa-solid fa-network-wired"></i> Arquitectura en AWS + Cloudflare + Nginx para absorber tráfico récord.</li>
-            <li><i class="fa-solid fa-handshake"></i> Coordinación directa con ingenieros de Facebook y Google para integraciones de medios (Instant Articles, AMP, SEO).</li>
+            <li><i class="fa-solid fa-chart-line"></i> <span data-i18n="sectorMediaF1">Real-time live voting systems for national prime-time televised events.</span></li>
+            <li><i class="fa-solid fa-network-wired"></i> <span data-i18n="sectorMediaF2">Cloud architecture on AWS + Cloudflare + Nginx to absorb record breaking traffic spikes.</span></li>
+            <li><i class="fa-solid fa-handshake"></i> <span data-i18n="sectorMediaF3">Direct coordination with Facebook and Google engineering teams for media integration (Instant Articles, AMP, Web Vitals, SEO).</span></li>
           </ul>
         </div>
 
@@ -382,21 +390,21 @@
               <i class="fa-solid fa-graduation-cap"></i>
             </div>
             <div class="sector-scope-tag intl">
-              <i class="fa-solid fa-globe"></i> Internacional
+              <i class="fa-solid fa-globe"></i> <span data-i18n="tagIntl">International</span>
             </div>
           </div>
-          <h3 class="sector-name">Educación Corporativa & LMS</h3>
-          <p class="sector-description">
-            Implementación y optimización de plataformas Learning Management System (LMS) empresariales para capacitación masiva de miles de colaboradores.
+          <h3 class="sector-name" data-i18n="sectorEdtechTitle">Corporate E-Learning & Enterprise LMS</h3>
+          <p class="sector-description" data-i18n="sectorEdtechDesc">
+            Implementation and optimization of enterprise Learning Management Systems (LMS) for global employee onboarding and continuous training.
           </p>
           <div class="sector-clients">
             <span class="client-pill">Globant University</span>
             <span class="client-pill">Opigno LMS</span>
           </div>
           <ul class="sector-features">
-            <li><i class="fa-solid fa-chalkboard-user"></i> Personalización de plataforma insignia LMS basada en Opigno/Drupal.</li>
-            <li><i class="fa-solid fa-user-lock"></i> Arquitectura segura y escalable para certificación y cursos globales.</li>
-            <li><i class="fa-solid fa-rocket"></i> Despliegues automatizados y tuning de rendimiento en plataformas PaaS.</li>
+            <li><i class="fa-solid fa-chalkboard-user"></i> <span data-i18n="sectorEdtechF1">Customization of flagship corporate LMS built on top of Opigno and Drupal.</span></li>
+            <li><i class="fa-solid fa-user-lock"></i> <span data-i18n="sectorEdtechF2">Scalable and secure architecture for global employee certifications and interactive courses.</span></li>
+            <li><i class="fa-solid fa-rocket"></i> <span data-i18n="sectorEdtechF3">Automated continuous build workflows and PaaS performance tuning.</span></li>
           </ul>
         </div>
 
@@ -407,23 +415,23 @@
               <i class="fa-solid fa-truck-moving"></i>
             </div>
             <div class="sector-scope-tag nat">
-              <i class="fa-solid fa-flag"></i> Nacional (Colombia)
+              <i class="fa-solid fa-flag"></i> <span data-i18n="tagNat">National (Colombia)</span>
             </div>
           </div>
-          <h3 class="sector-name">Logística, Telemetría & Biometría</h3>
-          <p class="sector-description">
-            Sistemas críticos de monitoreo satelital, trazabilidad vehicular en tiempo real y seguridad biométrica para transporte de electrodomésticos y prevención de siniestros.
+          <h3 class="sector-name" data-i18n="sectorLogisticsTitle">Fleet Telemetry, Cargo Tracking & Biometrics</h3>
+          <p class="sector-description" data-i18n="sectorLogisticsDesc">
+            Critical satellite monitoring, real-time vehicle geolocation, and biometric security systems to prevent theft and transit loss of high-value goods.
           </p>
           <div class="sector-clients">
             <span class="client-pill">Grupo OET SAS</span>
             <span class="client-pill">Faro Logistics</span>
-            <span class="client-pill">SAT Empresarial / Básico</span>
+            <span class="client-pill">SAT Básico / Empresarial</span>
             <span class="client-pill">Biometrical Following</span>
           </div>
           <ul class="sector-features">
-            <li><i class="fa-solid fa-fingerprint"></i> Mantenimiento de soluciones biométricas en Java con WebServices a PHP.</li>
-            <li><i class="fa-solid fa-database"></i> Modernización y reescritura de queries SQL y backend crítico de rastreo.</li>
-            <li><i class="fa-solid fa-map-pin"></i> Alta confiabilidad en la ubicación geográfica de activos de alto valor en tránsito.</li>
+            <li><i class="fa-solid fa-fingerprint"></i> <span data-i18n="sectorLogisticsF1">Maintenance and extension of biometric applications in Java with WebServices connecting to PHP.</span></li>
+            <li><i class="fa-solid fa-database"></i> <span data-i18n="sectorLogisticsF2">Modernization and overhaul of legacy database queries and real-time tracking backend.</span></li>
+            <li><i class="fa-solid fa-map-pin"></i> <span data-i18n="sectorLogisticsF3">High-reliability geographic tracking of commercial assets and cargo fleets.</span></li>
           </ul>
         </div>
 
@@ -435,13 +443,13 @@
   <section class="section skills-section" id="skills">
     <div class="container">
       <div class="section-badge">
-        <i class="fa-solid fa-laptop-code"></i> Conocimiento & Capacidades Técnicas
+        <i class="fa-solid fa-laptop-code"></i> <span data-i18n="skillsBadge">Knowledge & Technical Capabilities</span>
       </div>
-      <h2 class="section-title">
-        Stack Tecnológico & Habilidades Clave
+      <h2 class="section-title" data-i18n="skillsTitle">
+        Technical Stack & Core Competencies
       </h2>
-      <p class="section-subtitle">
-        Dominio equilibrado entre backend robusto, frontend modular moderno, infraestructura en la nube y automatización DevOps.
+      <p class="section-subtitle" data-i18n="skillsSubtitle">
+        Balanced mastery between robust backend systems, modern modular frontend, cloud infrastructure, and DevOps automation.
       </p>
 
       <div class="skills-matrix">
@@ -450,9 +458,9 @@
         <div class="skill-category-card">
           <div class="category-header">
             <i class="fa-solid fa-server"></i>
-            <h3>Backend & Enterprise CMS</h3>
+            <h3 data-i18n="catBackendTitle">Backend & Enterprise CMS</h3>
           </div>
-          <p class="category-desc">Especialidad central de más de 10 años en desarrollo de módulos, APIs y arquitecturas.</p>
+          <p class="category-desc" data-i18n="catBackendDesc">10+ years specializing in custom modules, robust APIs, and cloud-ready architectures.</p>
           <div class="tech-tags-list">
             <span class="tech-tag highlight"><i class="fa-brands fa-drupal"></i> Drupal 8 / 9 / 10</span>
             <span class="tech-tag highlight"><i class="fa-brands fa-php"></i> PHP (Symfony)</span>
@@ -471,9 +479,9 @@
         <div class="skill-category-card">
           <div class="category-header">
             <i class="fa-solid fa-palette"></i>
-            <h3>Frontend & UI Systems</h3>
+            <h3 data-i18n="catFrontendTitle">Frontend & UI Systems</h3>
           </div>
-          <p class="category-desc">Creación de interfaces accesibles, modulares y de alto desempeño gráfico.</p>
+          <p class="category-desc" data-i18n="catFrontendDesc">Creating accessible, modular, and high-performance graphic interfaces.</p>
           <div class="tech-tags-list">
             <span class="tech-tag highlight"><i class="fa-brands fa-react"></i> ReactJS & Next.js</span>
             <span class="tech-tag highlight"><i class="fa-solid fa-book-open"></i> Storybook (Atomic Design)</span>
@@ -492,9 +500,9 @@
         <div class="skill-category-card">
           <div class="category-header">
             <i class="fa-solid fa-cloud"></i>
-            <h3>Cloud, DevOps & Infraestructura</h3>
+            <h3 data-i18n="catCloudTitle">Cloud, DevOps & Infrastructure</h3>
           </div>
-          <p class="category-desc">Aprovisionamiento, orquestación, CI/CD y despliegues sin tiempo de inactividad.</p>
+          <p class="category-desc" data-i18n="catCloudDesc">Provisioning, orchestration, CI/CD pipelines, and zero-downtime deployments.</p>
           <div class="tech-tags-list">
             <span class="tech-tag highlight"><i class="fa-brands fa-aws"></i> AWS (Lambdas, S3, API Gateway)</span>
             <span class="tech-tag highlight"><i class="fa-solid fa-cloud-bolt"></i> Acquia & Pantheon PaaS</span>
@@ -512,18 +520,18 @@
         <div class="skill-category-card">
           <div class="category-header">
             <i class="fa-solid fa-database"></i>
-            <h3>Datos, Metodología & Liderazgo</h3>
+            <h3 data-i18n="catDataTitle">Data, Agile & Leadership</h3>
           </div>
-          <p class="category-desc">Manejo de almacenamiento transaccional y prácticas ágiles de ingeniería.</p>
+          <p class="category-desc" data-i18n="catDataDesc">Transactional storage mastery, data-driven decisions, and agile engineering leadership.</p>
           <div class="tech-tags-list">
             <span class="tech-tag highlight"><i class="fa-solid fa-database"></i> MySQL & PostgreSQL</span>
             <span class="tech-tag"><i class="fa-solid fa-server"></i> NoSQL Databases</span>
             <span class="tech-tag"><i class="fa-solid fa-rotate"></i> Scrum & Agile Mindset</span>
-            <span class="tech-tag"><i class="fa-solid fa-users"></i> Liderazgo Técnico & Mentoring</span>
-            <span class="tech-tag"><i class="fa-solid fa-dollar-sign"></i> Optimización de Costes Cloud</span>
-            <span class="tech-tag"><i class="fa-solid fa-vial"></i> Testing & Debugging Profundo</span>
+            <span class="tech-tag"><i class="fa-solid fa-users"></i> Mentoring & Tech Squad Leadership</span>
+            <span class="tech-tag"><i class="fa-solid fa-dollar-sign"></i> Cloud Cost Optimization</span>
+            <span class="tech-tag"><i class="fa-solid fa-vial"></i> Deep Testing & Debugging</span>
             <span class="tech-tag"><i class="fa-solid fa-code-branch"></i> Git Workflow & Code Reviews</span>
-            <span class="tech-tag"><i class="fa-solid fa-chart-pie"></i> ComScore & Data-Driven Decisions</span>
+            <span class="tech-tag"><i class="fa-solid fa-chart-pie"></i> ComScore & Data-Driven Insights</span>
           </div>
         </div>
 
@@ -535,13 +543,13 @@
   <section class="section experience-section" id="experiencia">
     <div class="container">
       <div class="section-badge">
-        <i class="fa-solid fa-timeline"></i> Trayectoria Profesional
+        <i class="fa-solid fa-timeline"></i> <span data-i18n="expBadge">Career Trajectory</span>
       </div>
-      <h2 class="section-title">
-        Experiencia Comprobada & Proyectos Destacados
+      <h2 class="section-title" data-i18n="expTitle">
+        Proven Track Record & Flagship Projects
       </h2>
-      <p class="section-subtitle">
-        Una evolución constante desde ingeniería de software backend hasta roles senior y arquitecturas especializadas.
+      <p class="section-subtitle" data-i18n="expSubtitle">
+        A continuous progression from backend software engineering to senior developer and cloud architect.
       </p>
 
       <div class="timeline">
@@ -551,21 +559,21 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-period">2022 – 2025</span>
+              <span class="timeline-period" data-i18n="job1Period">2022 – 2025</span>
               <span class="company-badge"><i class="fa-solid fa-building"></i> weKnow Inc</span>
-              <span class="location-pill"><i class="fa-solid fa-globe"></i> Internacional (USA / Remoto)</span>
+              <span class="location-pill"><i class="fa-solid fa-globe"></i> <span data-i18n="job1Location">International (USA / Remote)</span></span>
             </div>
-            <h3 class="role-title">Drupal Developer</h3>
-            <p class="project-headline">
-              <strong>Proyectos de alto calibre:</strong> Mastercard, Inova, CHOP, Tufts Medicine, AdventHealth.
+            <h3 class="role-title" data-i18n="job1Role">Drupal Developer</h3>
+            <p class="project-headline" data-i18n="job1Headline">
+              <strong>Flagship Projects:</strong> Mastercard, Inova Health, CHOP, Tufts Medicine, AdventHealth.
             </p>
-            <p class="timeline-desc">
-              Desarrollo de soluciones basadas en Drupal, PHP, JavaScript y MySQL. Implementación del framework <strong>Storybook</strong> aplicando principios de <strong>Atomic Design</strong> para crear componentes modulares y reutilizables. Automatización de flujos de compilación con Gulp (Sass/JS), desarrollo de módulos customizados e integración con APIs REST.
+            <p class="timeline-desc" data-i18n="job1Desc">
+              Developed enterprise web solutions utilizing Drupal, PHP, JavaScript, and MySQL. Implemented the <strong>Storybook</strong> framework applying <strong>Atomic Design</strong> principles for reusable, modular components. Automated asset compilation with Gulp (Sass/JS), built custom Drupal modules, and integrated RESTful APIs.
             </p>
             <div class="key-achievements">
-              <span><i class="fa-solid fa-circle-check"></i> Garantizó cumplimiento de estándares de accesibilidad (ADA/WCAG), seguridad y rendimiento web.</span>
-              <span><i class="fa-solid fa-circle-check"></i> Implementación de arquitecturas Headless / Decoupled Drupal integradas con Next.js y React.</span>
-              <span><i class="fa-solid fa-circle-check"></i> Integración con ChatGPT API y autenticación enterprise con Auth0.</span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job1Ach1">Ensured strict compliance with accessibility (ADA/WCAG), security standards, and web performance optimization.</span></span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job1Ach2">Implemented Headless / Decoupled Drupal architectures integrated with modern Next.js and React frontends.</span></span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job1Ach3">Integrated ChatGPT / AI APIs and enterprise authentication via Auth0.</span></span>
             </div>
             <div class="item-technologies">
               <span class="badge">Drupal 9/10</span>
@@ -587,21 +595,21 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-period">2020 – 2022</span>
+              <span class="timeline-period" data-i18n="job2Period">2020 – 2022</span>
               <span class="company-badge"><i class="fa-solid fa-building"></i> Globant</span>
-              <span class="location-pill"><i class="fa-solid fa-globe"></i> Internacional (Multinacional)</span>
+              <span class="location-pill"><i class="fa-solid fa-globe"></i> <span data-i18n="job2Location">International (Multinational)</span></span>
             </div>
-            <h3 class="role-title">Ssr Drupal Developer</h3>
-            <p class="project-headline">
-              <strong>Proyectos clave:</strong> Banco Santander, Banco Interamericano de Desarrollo (BID/IAB), Globant University.
+            <h3 class="role-title" data-i18n="job2Role">Ssr Drupal Developer</h3>
+            <p class="project-headline" data-i18n="job2Headline">
+              <strong>Key Projects:</strong> Santander Bank, Inter-American Development Bank (IDB/BID), Globant University.
             </p>
-            <p class="timeline-desc">
-              Desarrollo y rediseño de plataformas bancarias internacionales mediante site-building avanzado, módulos personalizados y módulos contribuidos en Drupal. Desarrollo y afinamiento de la plataforma insignia de LMS corporativa basada en <strong>Opigno LMS</strong> para la capacitación de miles de colaboradores.
+            <p class="timeline-desc" data-i18n="job2Desc">
+              Developed and redesigned global banking platforms through advanced site-building, custom modules, and contributed modules in Drupal. Engineered and optimized the company's flagship LMS platform based on <strong>Opigno LMS</strong> for thousands of employees globally.
             </p>
             <div class="key-achievements">
-              <span><i class="fa-solid fa-circle-check"></i> Gestión de despliegues y sintonización de rendimiento en PaaS como Pantheon y Acquia.</span>
-              <span><i class="fa-solid fa-circle-check"></i> Integración de Atomic Design y Storybook para sistemas de diseño frontend escalables.</span>
-              <span><i class="fa-solid fa-circle-check"></i> Soporte en mantenimiento y diseño de plataformas médicas y corporativas seguras.</span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job2Ach1">Managed continuous deployments and fine-tuned performance on PaaS providers like Pantheon and Acquia.</span></span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job2Ach2">Collaborated on Atomic Design and Storybook integration to deliver scalable design systems.</span></span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job2Ach3">Supported the maintenance and architectural design of secure medical and corporate platforms.</span></span>
             </div>
             <div class="item-technologies">
               <span class="badge">Drupal</span>
@@ -622,21 +630,21 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-period">2015 – 2020</span>
+              <span class="timeline-period" data-i18n="job3Period">2015 – 2020</span>
               <span class="company-badge"><i class="fa-solid fa-building"></i> Caracol Televisión</span>
-              <span class="location-pill"><i class="fa-solid fa-flag"></i> Nacional (Líder en Medios Colombia)</span>
+              <span class="location-pill"><i class="fa-solid fa-flag"></i> <span data-i18n="job3Location">National (Media Leader Colombia)</span></span>
             </div>
-            <h3 class="role-title">Senior Developer</h3>
-            <p class="project-headline">
-              <strong>Plataformas masivas:</strong> Noticias Caracol, Caracol TV, El Espectador, Gol Caracol, Blu Radio, Shock, Teatro Mayor, Sistema de Votación en Tiempo Real.
+            <h3 class="role-title" data-i18n="job3Role">Senior Developer</h3>
+            <p class="project-headline" data-i18n="job3Headline">
+              <strong>Massive Platforms:</strong> Noticias Caracol, Caracol TV, El Espectador, Gol Caracol, Blu Radio, Shock, Teatro Mayor, Real-time Live Voting.
             </p>
-            <p class="timeline-desc">
-              Liderazgo en desarrollo para las plataformas informativas, culturales y deportivas más visitadas de Colombia. Construcción de plataformas escalables y seguras con Drupal, AWS, APIs, bases de datos SQL/NoSQL y frameworks como ReactJS, Angular, NodeJS y Symfony. Interacción con .NET para integraciones corporativas.
+            <p class="timeline-desc" data-i18n="job3Desc">
+              Contributed to multiple large-scale digital platforms for Colombia's top media networks. Built scalable, secure platforms using Drupal, AWS, APIs, SQL/NoSQL databases, and frameworks such as ReactJS, Angular, NodeJS, and Symfony, integrating with .NET backend services.
             </p>
             <div class="key-achievements">
-              <span><i class="fa-solid fa-circle-check"></i> Trabajo directo y coordinación con ingenieros de Facebook y Google para la evolución de productos digitales de noticias y video.</span>
-              <span><i class="fa-solid fa-circle-check"></i> Arquitectura en la nube (AWS) y optimización de CDN/Cloudflare para soportar transmisiones en vivo y millones de hits en eventos críticos.</span>
-              <span><i class="fa-solid fa-circle-check"></i> Implementación de pipelines de CI/CD continuos con Jenkins, GitHub, Bitbucket y Rundeck.</span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job3Ach1">Worked directly with Facebook and Google engineering teams to enhance and optimize digital media products (video, instant articles, SEO).</span></span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job3Ach2">Architected cloud infrastructure on AWS and Cloudflare CDN to withstand record-breaking concurrent traffic during live events.</span></span>
+              <span><i class="fa-solid fa-circle-check"></i> <span data-i18n="job3Ach3">Implemented automated CI/CD continuous delivery pipelines with Jenkins, GitHub, Bitbucket, and Rundeck.</span></span>
             </div>
             <div class="item-technologies">
               <span class="badge">Drupal</span>
@@ -658,16 +666,16 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-period">2014 – 2015</span>
+              <span class="timeline-period" data-i18n="job4Period">2014 – 2015</span>
               <span class="company-badge"><i class="fa-solid fa-building"></i> Pulzo (R360 SAS)</span>
-              <span class="location-pill"><i class="fa-solid fa-flag"></i> Startup de Medios Digitales</span>
+              <span class="location-pill"><i class="fa-solid fa-flag"></i> <span data-i18n="job4Location">Digital News Startup</span></span>
             </div>
-            <h3 class="role-title">Backend Web Developer</h3>
-            <p class="project-headline">
-              <strong>Proyecto:</strong> Pulzo.com (Lanzamiento y consolidación de nuevo portal de noticias nativo digital).
+            <h3 class="role-title" data-i18n="job4Role">Backend Web Developer</h3>
+            <p class="project-headline" data-i18n="job4Headline">
+              <strong>Project:</strong> Pulzo.com (Launch and scaling of digital native news platform).
             </p>
-            <p class="timeline-desc">
-              Desarrollo backend en Drupal y PHP integrando componentes de Symfony para máxima velocidad y escalabilidad. Administración de infraestructura cloud en AWS, métricas con Google Analytics y ComScore, y gestión de despliegues ágiles en Acquia.
+            <p class="timeline-desc" data-i18n="job4Desc">
+              Backend development using Drupal and PHP, integrating Symfony components to optimize application scalability. Managed AWS cloud hosting, user analytics via Google Analytics and ComScore, and deployments via Acquia.
             </p>
             <div class="item-technologies">
               <span class="badge">Drupal</span>
@@ -685,16 +693,16 @@
           <div class="timeline-marker"></div>
           <div class="timeline-content">
             <div class="timeline-meta">
-              <span class="timeline-period">2012 – 2014</span>
+              <span class="timeline-period" data-i18n="job5Period">2012 – 2014</span>
               <span class="company-badge"><i class="fa-solid fa-building"></i> Grupo OET SAS</span>
-              <span class="location-pill"><i class="fa-solid fa-flag"></i> Telemetría & Logística de Carga</span>
+              <span class="location-pill"><i class="fa-solid fa-flag"></i> <span data-i18n="job5Location">Cargo Logistics & Telemetry</span></span>
             </div>
-            <h3 class="role-title">Developer Engineer</h3>
-            <p class="project-headline">
-              <strong>Sistemas:</strong> Faro Logistics, SAT Básico, SAT Empresarial, El Transporte, Biometrical Following.
+            <h3 class="role-title" data-i18n="job5Role">Developer Engineer</h3>
+            <p class="project-headline" data-i18n="job5Headline">
+              <strong>Systems:</strong> Faro Logistics, SAT Básico, SAT Empresarial, El Transporte, Biometrical Following.
             </p>
-            <p class="timeline-desc">
-              Modernización y actualización de la plataforma de rastreo de flotas y prevención de siniestros en transporte de mercancías de alta gama. Migración de arquitectura legacy PHP/MySQL, optimización de queries SQL y mantenimiento de soluciones biométricas en Java comunicadas por WebServices.
+            <p class="timeline-desc" data-i18n="job5Desc">
+              Modernized vehicle tracking and fleet security systems for high-value cargo transit. Upgraded legacy PHP and MySQL codebases, optimized SQL queries for high performance, and maintained Java biometric applications communicating through WebServices.
             </p>
             <div class="item-technologies">
               <span class="badge">PHP</span>
@@ -714,71 +722,71 @@
   <section class="section certs-section" id="certificaciones">
     <div class="container">
       <div class="section-badge">
-        <i class="fa-solid fa-graduation-cap"></i> Formación Continua
+        <i class="fa-solid fa-graduation-cap"></i> <span data-i18n="certsBadge">Continuous Learning</span>
       </div>
-      <h2 class="section-title">
-        Certificaciones & Educación Especializada
+      <h2 class="section-title" data-i18n="certsTitle">
+        Certifications & Specialized Training
       </h2>
-      <p class="section-subtitle">
-        Compromiso constante con la actualización tecnológica en cloud, arquitecturas modernas y liderazgo.
+      <p class="section-subtitle" data-i18n="certsSubtitle">
+        Constant dedication to staying ahead in cloud infrastructure, modern architectures, and engineering leadership.
       </p>
 
       <div class="certs-grid">
         <div class="cert-card in-progress">
-          <div class="cert-badge-status">En Preparación</div>
+          <div class="cert-badge-status" data-i18n="certPreparing">In Preparation</div>
           <div class="cert-icon"><i class="fa-brands fa-drupal"></i></div>
           <h4>Acquia Certified Back End Specialist - D10</h4>
           <p class="cert-issuer">Acquia</p>
-          <span class="cert-desc">Certificación elite de especialización en arquitectura backend de Drupal 10.</span>
+          <span class="cert-desc" data-i18n="cert1Desc">Elite certification specializing in advanced Drupal 10 backend architecture.</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-brands fa-aws"></i></div>
           <h4>Serverless, Lambdas and API Gateway using AWS</h4>
           <p class="cert-issuer">Udemy</p>
-          <span class="cert-desc">Arquitecturas cloud sin servidor, microservicios y APIs escalables en la nube.</span>
+          <span class="cert-desc" data-i18n="cert2Desc">Serverless architectures, microservices, and highly scalable cloud APIs on AWS.</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-brands fa-github"></i></div>
           <h4>GitHub Actions</h4>
           <p class="cert-issuer">LinkedIn Learning</p>
-          <span class="cert-desc">Automatización de flujos de trabajo de CI/CD, testing y despliegues automáticos.</span>
+          <span class="cert-desc" data-i18n="cert3Desc">Automating CI/CD workflows, testing suites, and automated cloud deployments.</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-brands fa-golang"></i></div>
           <h4>Go Essential Training</h4>
           <p class="cert-issuer">LinkedIn Learning</p>
-          <span class="cert-desc">Desarrollo concurrente y de alto rendimiento con el lenguaje Go (Golang).</span>
+          <span class="cert-desc" data-i18n="cert4Desc">Concurrent programming and high-performance backend systems with Go (Golang).</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-brands fa-python"></i></div>
           <h4>Complete Python Developer: Zero to Mastery</h4>
           <p class="cert-issuer">Udemy</p>
-          <span class="cert-desc">Fundamentos, automatizaciones, análisis con Pandas y backend con Python.</span>
+          <span class="cert-desc" data-i18n="cert5Desc">Core concepts, automation, data analysis with Pandas, and backend engineering with Python.</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-solid fa-user-tie"></i></div>
           <h4>Leadership: Practical Leadership Skills</h4>
           <p class="cert-issuer">Udemy</p>
-          <span class="cert-desc">Gestión de equipos técnicos, toma de decisiones y alineación estratégica.</span>
+          <span class="cert-desc" data-i18n="cert6Desc">Leading technical squads, strategic decision making, and agile mentoring.</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
           <h4>Java SE, EE with MySQL (Basic to Advanced)</h4>
           <p class="cert-issuer">Udemy</p>
-          <span class="cert-desc">Arquitectura empresarial Java, concurrencia y persistencia relacional.</span>
+          <span class="cert-desc" data-i18n="cert7Desc">Enterprise Java architecture, concurrency, and relational persistence with MySQL.</span>
         </div>
 
         <div class="cert-card">
           <div class="cert-icon"><i class="fa-solid fa-rotate"></i></div>
           <h4>Scrum Fundamentals Certified</h4>
           <p class="cert-issuer">VMedu Inc.</p>
-          <span class="cert-desc">Principios y ceremonias ágiles para entregas continuas de alto valor.</span>
+          <span class="cert-desc" data-i18n="cert8Desc">Agile methodologies, ceremonies, and continuous delivery of high-value increments.</span>
         </div>
       </div>
     </div>
@@ -792,18 +800,18 @@
           
           <div class="contact-info">
             <div class="section-badge">
-              <i class="fa-solid fa-envelope-open-text"></i> Conectemos
+              <i class="fa-solid fa-envelope-open-text"></i> <span data-i18n="contactBadge">Get In Touch</span>
             </div>
-            <h2 class="contact-title">¿Listo para impulsar su próximo desafío técnico?</h2>
-            <p class="contact-text">
-              Estoy disponible para proyectos estratégicos, consultoría en arquitecturas cloud/Drupal y oportunidades full-time en esquemas remotos nacionales o internacionales.
+            <h2 class="contact-title" data-i18n="contactTitle">Ready to elevate your next technical challenge?</h2>
+            <p class="contact-text" data-i18n="contactText">
+              I am open to strategic tech advisory, cloud/Drupal architecture consulting, and Senior / Tech Lead full-time remote roles worldwide.
             </p>
 
             <div class="contact-details-list">
               <div class="contact-row">
                 <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
                 <div class="contact-value">
-                  <span class="label">Teléfono / Celular:</span>
+                  <span class="label" data-i18n="contactPhoneLabel">Phone / Mobile:</span>
                   <a href="tel:+573144433323">+57 314 443 3323</a>
                 </div>
               </div>
@@ -811,15 +819,15 @@
               <div class="contact-row">
                 <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
                 <div class="contact-value">
-                  <span class="label">WhatsApp Directo:</span>
-                  <a href="https://wa.me/573144433323" target="_blank" rel="noopener">Iniciar chat por WhatsApp</a>
+                  <span class="label" data-i18n="contactWhatsAppLabel">Direct WhatsApp:</span>
+                  <a href="https://wa.me/573144433323" target="_blank" rel="noopener" id="contactWaAction" data-i18n="contactWhatsAppAction">Start a chat on WhatsApp</a>
                 </div>
               </div>
 
               <div class="contact-row">
                 <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
                 <div class="contact-value">
-                  <span class="label">Correo Electrónico:</span>
+                  <span class="label" data-i18n="contactEmailLabel">Email Address:</span>
                   <a href="mailto:engmiguelgarcia@gmail.com">engmiguelgarcia@gmail.com</a>
                 </div>
               </div>
@@ -827,8 +835,8 @@
               <div class="contact-row">
                 <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
                 <div class="contact-value">
-                  <span class="label">Zona Horaria & Modalidad:</span>
-                  <span>UTC-5 (Colombia) | 100% Remoto / Nearshore EE.UU.</span>
+                  <span class="label" data-i18n="contactTimezoneLabel">Timezone & Availability:</span>
+                  <span data-i18n="contactTimezoneValue">UTC-5 (EST Compatible) | 100% Remote / US Nearshore</span>
                 </div>
               </div>
             </div>
@@ -836,32 +844,32 @@
 
           <!-- Quick interactive contact form / trigger -->
           <div class="contact-form-box">
-            <h3 class="form-title">Envíame un Mensaje Rápido</h3>
-            <p class="form-subtitle">Redirige automáticamente a tu cliente de correo con los detalles listos.</p>
+            <h3 class="form-title" data-i18n="formTitle">Send a Direct Message</h3>
+            <p class="form-subtitle" data-i18n="formSubtitle">Pre-fills your default email client with your message details.</p>
             
             <form id="contactForm" onsubmit="handleFormSubmit(event)">
               <div class="form-group">
-                <label for="userName">Su Nombre o Empresa</label>
-                <input type="text" id="userName" name="name" required placeholder="Ej: Tech Partners Inc / Juan Pérez">
+                <label for="userName" data-i18n="formLabelName">Your Name or Company</label>
+                <input type="text" id="userName" name="name" required placeholder="e.g., Tech Partners Inc / John Smith" data-i18n-placeholder="formPlaceholderName">
               </div>
 
               <div class="form-group">
-                <label for="userSubject">Asunto o Tipo de Proyecto</label>
+                <label for="userSubject" data-i18n="formLabelSubject">Subject / Engagement Type</label>
                 <select id="userSubject" name="subject">
-                  <option value="Consultoría Drupal / Cloud">Consultoría Drupal / Cloud AWS</option>
-                  <option value="Oportunidad Senior / Lead Engineer">Oportunidad Laboral Senior / Lead</option>
-                  <option value="Desarrollo de Proyecto Web">Desarrollo de Nuevo Proyecto Web</option>
-                  <option value="Colaboración General">Otro tipo de colaboración</option>
+                  <option value="Drupal / AWS Cloud Consulting" data-i18n="formOpt1">Drupal / AWS Cloud Consulting</option>
+                  <option value="Senior / Tech Lead Opportunity" data-i18n="formOpt2">Senior / Tech Lead Opportunity</option>
+                  <option value="New Web Project Development" data-i18n="formOpt3">New Web Project Development</option>
+                  <option value="General Collaboration" data-i18n="formOpt4">General Collaboration</option>
                 </select>
               </div>
 
               <div class="form-group">
-                <label for="userMessage">Mensaje</label>
-                <textarea id="userMessage" name="message" rows="4" required placeholder="Hola Miguel, nos interesa tu perfil para..."></textarea>
+                <label for="userMessage" data-i18n="formLabelMsg">Message</label>
+                <textarea id="userMessage" name="message" rows="4" required placeholder="Hello Miguel, we are interested in discussing..." data-i18n-placeholder="formPlaceholderMsg"></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary btn-block">
-                <span>Enviar por Correo</span>
+                <span data-i18n="formBtnSubmit">Send via Email</span>
                 <i class="fa-solid fa-paper-plane"></i>
               </button>
             </form>
@@ -877,19 +885,19 @@
     <div class="container footer-content">
       <div class="footer-left">
         <span class="footer-logo">&lt;MG/&gt; Miguel García</span>
-        <p>Ingeniero de Software Senior | Drupal & Cloud Solutions Architect</p>
+        <p data-i18n="footerRole">Senior Software Engineer | Drupal & Cloud Solutions Architect</p>
       </div>
 
       <div class="footer-right">
         <div class="footer-links">
-          <a href="#perfil">Perfil</a>
-          <a href="#sectores">Sectores</a>
-          <a href="#skills">Skills</a>
-          <a href="#experiencia">Trayectoria</a>
+          <a href="#perfil" data-i18n="navProfile">Profile</a>
+          <a href="#sectores" data-i18n="navSectors">Sectors</a>
+          <a href="#skills" data-i18n="navSkills">Skills</a>
+          <a href="#experiencia" data-i18n="navExperience">Experience</a>
           <a href="mailto:engmiguelgarcia@gmail.com">Email</a>
         </div>
         <p class="copyright">
-          © <span id="currentYear">2026</span> Miguel García. Todos los derechos reservados.
+          © <span id="currentYear">2026</span> Miguel García. <span data-i18n="footerRights">All rights reserved.</span>
         </p>
       </div>
     </div>
@@ -898,10 +906,28 @@
   <!-- Floating Toast Notification for copy events -->
   <div class="toast-notification" id="toast">
     <i class="fa-solid fa-circle-check"></i>
-    <span id="toastMsg">Copiado al portapapeles</span>
+    <span id="toastMsg">Copied to clipboard</span>
   </div>
 
-  <!-- Script -->
+  <!-- Persistent Floating WhatsApp Widget with Pulse & Tooltip -->
+  <div class="floating-whatsapp-wrap" id="floatingWhatsapp">
+    <a href="https://wa.me/573144433323?text=Hi%20Miguel,%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." 
+       target="_blank" 
+       rel="noopener" 
+       class="floating-whatsapp-btn" 
+       id="floatingWaLink"
+       aria-label="Chat with Miguel on WhatsApp">
+      <span class="wa-radar-pulse"></span>
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="wa-tooltip-pill">
+        <span class="wa-status-dot"></span>
+        <span data-i18n="floatingWaTooltip">Chat on WhatsApp</span>
+      </span>
+    </a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="translations.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
