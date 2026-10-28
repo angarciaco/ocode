@@ -218,7 +218,7 @@ function applyLanguage(lang) {
     const currentHref = floatingWa.getAttribute('href') || '';
     const phoneMatch = currentHref.match(/wa\.me\/(\d+)/);
     const phone = phoneMatch ? phoneMatch[1] : '573177533148';
-    floatingWa.setAttribute('href', `https://wa.me/${phone}?text=${waGreeting}`);
+    floatingWa.setAttribute('href', `https://web.whatsapp.com/send?phone=+${phone}?text=${waGreeting}`);
     floatingWa.setAttribute('aria-label', dict.floatingWaTooltip || 'Chat on WhatsApp');
   }
 
@@ -227,7 +227,7 @@ function applyLanguage(lang) {
     const currentHref = contactWaAction.getAttribute('href') || '';
     const phoneMatch = currentHref.match(/wa\.me\/(\d+)/);
     const phone = phoneMatch ? phoneMatch[1] : '573177533148';
-    contactWaAction.setAttribute('href', `https://wa.me/${phone}?text=${waGreeting}`);
+    contactWaAction.setAttribute('href', `https://web.whatsapp.com/send?phone=+${phone}?text=${waGreeting}`);
   }
 
   const navWaLink = document.getElementById('navWaLink');
@@ -235,7 +235,7 @@ function applyLanguage(lang) {
     const currentHref = navWaLink.getAttribute('href') || '';
     const phoneMatch = currentHref.match(/wa\.me\/(\d+)/);
     const phone = phoneMatch ? phoneMatch[1] : '573177533148';
-    navWaLink.setAttribute('href', `https://wa.me/${phone}?text=${waGreeting}`);
+    navWaLink.setAttribute('href', `https://web.whatsapp.com/send?phone=+${phone}?text=${waGreeting}`);
     navWaLink.setAttribute('title', dict.floatingWaTooltip || 'Chat on WhatsApp');
   }
 }
