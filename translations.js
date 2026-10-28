@@ -45,6 +45,7 @@ const translations = {
     chipFocus1: "Cloud Microservices",
     chipFocus2: "Enterprise Drupal",
     chipFocus3: "High-Traffic Systems",
+    chipFocus4: "AI Governance (PMI)",
 
     // Ticker
     tickerCaption: "COMPANIES & CLIENTS I HAVE COLLABORATED WITH DIRECTLY & INDIRECTLY",
@@ -59,6 +60,7 @@ const translations = {
     aboutPoint1: "Collaboration in cross-functional multicultural environments: Onsite, Nearshore, and Offshore.",
     aboutPoint2: "Full Software Development Life Cycle (SDLC): From requirements and architecture to CI/CD.",
     aboutPoint3: "Direct coordination with engineers from Google, Facebook, Acquia, and Pantheon.",
+    aboutPoint4: "<strong>Responsible AI Governance:</strong> Application of ethical frameworks, regulatory compliance, and risk mitigation aligned with PMI standards.",
 
     miniCard1Title: "Modular Components & Atomic Design",
     miniCard1Desc: "Designing and engineering reusable design systems with Storybook, Next.js, React, and Sass/Tailwind for multi-disciplinary squads.",
@@ -124,6 +126,8 @@ const translations = {
     catCloudDesc: "Provisioning, orchestration, CI/CD pipelines, and zero-downtime deployments.",
     catDataTitle: "Data, Agile & Leadership",
     catDataDesc: "Transactional storage mastery, data-driven decisions, and agile engineering leadership.",
+    tagAiGov: "AI Governance & Regulation (PMI)",
+    tagResponsibleAi: "Responsible AI & Ethics",
 
     // Experience / Timeline
     expBadge: "Career Trajectory",
@@ -179,6 +183,15 @@ const translations = {
     certsTitle: "Certifications & Specialized Training",
     certsSubtitle: "Constant dedication to staying ahead in cloud infrastructure, modern architectures, and engineering leadership.",
     certPreparing: "In Preparation",
+    certAiGovBadge: "PMI Authorized Training Partner",
+    certAiGovTitle: "Essential AI Governance: Bridging Responsible AI, Compliance, and Regulation",
+    certAiGovIssuer: "LinkedIn Learning &bull; PMI Authorized Partner",
+    certAiGovDesc: "Specialized training on AI policy, ethics, regulatory compliance frameworks, risk management, and responsible AI lifecycle, accredited with official PDUs under Project Management Institute (PMI) standards.",
+    certAiGovDate: "October 2026",
+    certAiGovDetails: "1h 8m &bull; 19 videos &bull; 1.00 PMI PDU",
+    certSkillAiGov: "AI Policy & Governance",
+    certSkillRespAi: "Responsible AI",
+    certSkillCompliance: "Regulatory Compliance",
     cert1Desc: "Elite certification specializing in advanced Drupal 10 backend architecture.",
     cert2Desc: "Serverless architectures, microservices, and highly scalable cloud APIs on AWS.",
     cert3Desc: "Automating CI/CD workflows, testing suites, and automated cloud deployments.",
@@ -208,6 +221,7 @@ const translations = {
     formOpt2: "Senior / Tech Lead Opportunity",
     formOpt3: "New Web Project Development",
     formOpt4: "General Collaboration",
+    formOpt5: "AI Governance & Architecture Advisory",
     formLabelMsg: "Message",
     formPlaceholderMsg: "Hello Miguel, we are interested in discussing...",
     formBtnSubmit: "Send via Email",
@@ -262,6 +276,7 @@ const translations = {
     chipFocus1: "Cloud Microservices",
     chipFocus2: "Enterprise Drupal",
     chipFocus3: "High-Traffic Systems",
+    chipFocus4: "Gobernanza de IA (PMI)",
 
     // Ticker
     tickerCaption: "EMPRESAS Y CLIENTES CON LOS QUE HE COLABORADO DIRECTA E INDIRECTAMENTE",
@@ -276,6 +291,7 @@ const translations = {
     aboutPoint1: "Colaboración en entornos multiculturales: Onsite, Nearshore y Offshore.",
     aboutPoint2: "Ciclo de vida de software completo (SDLC): Del levantamiento y diseño al CI/CD.",
     aboutPoint3: "Interacción directa con ingenieros de Google, Facebook, Acquia y Pantheon.",
+    aboutPoint4: "<strong>Gobernanza de IA Responsable:</strong> Aplicación de marcos éticos, cumplimiento normativo y mitigación de riesgos alineados a estándares PMI.",
 
     miniCard1Title: "Componentes Modulares & Atomic Design",
     miniCard1Desc: "Creación de sistemas de diseño reutilizables con Storybook, Next.js, React y Sass/Tailwind para equipos multidisciplinarios.",
@@ -341,6 +357,8 @@ const translations = {
     catCloudDesc: "Aprovisionamiento, orquestación, CI/CD y despliegues sin tiempo de inactividad.",
     catDataTitle: "Datos, Metodología & Liderazgo",
     catDataDesc: "Manejo de almacenamiento transaccional y prácticas ágiles de ingeniería.",
+    tagAiGov: "Gobernanza y Regulación de IA (PMI)",
+    tagResponsibleAi: "IA Responsable & Ética",
 
     // Experience / Timeline
     expBadge: "Trayectoria Profesional",
@@ -396,6 +414,15 @@ const translations = {
     certsTitle: "Certificaciones & Educación Especializada",
     certsSubtitle: "Compromiso constante con la actualización tecnológica en cloud, arquitecturas modernas y liderazgo.",
     certPreparing: "En Preparación",
+    certAiGovBadge: "PMI Authorized Training Partner",
+    certAiGovTitle: "Gobernanza esencial de la IA: Conectando la IA responsable, el cumplimiento y la regulación",
+    certAiGovIssuer: "LinkedIn Learning &bull; PMI Authorized Partner",
+    certAiGovDesc: "Capacitación estratégica en políticas de IA, marcos éticos, cumplimiento normativo, gestión de riesgos y ciclo de vida de IA responsable, acreditada con PDUs oficiales bajo estándares del Project Management Institute (PMI).",
+    certAiGovDate: "Octubre 2026",
+    certAiGovDetails: "1 h 8 min &bull; 19 vídeos &bull; 1.00 PDU PMI",
+    certSkillAiGov: "Política y Regulación de IA",
+    certSkillRespAi: "IA Responsable",
+    certSkillCompliance: "Cumplimiento Regulatorio",
     cert1Desc: "Certificación elite de especialización en arquitectura backend de Drupal 10.",
     cert2Desc: "Arquitecturas cloud sin servidor, microservicios y APIs escalables en la nube.",
     cert3Desc: "Automatización de flujos de trabajo de CI/CD, testing y despliegues automáticos.",
@@ -425,6 +452,7 @@ const translations = {
     formOpt2: "Oportunidad Laboral Senior / Lead",
     formOpt3: "Desarrollo de Nuevo Proyecto Web",
     formOpt4: "Otro tipo de colaboración",
+    formOpt5: "Asesoría en Gobernanza de IA & Arquitectura",
     formLabelMsg: "Mensaje",
     formPlaceholderMsg: "Hola Miguel, nos interesa tu perfil para...",
     formBtnSubmit: "Enviar por Correo",
